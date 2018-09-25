@@ -1,7 +1,7 @@
 const hook = require('./hook.js');
 const promise = require('./promise.js');
 
-const moduleFiles = line => !line.match(/async_hooks.js|long-promise\/(hook|promise).js/);
+const moduleFiles = line => !line.match(/async_hooks.js|long-promise2\/(hook|promise).js/);
 
 function enable() {
     promise.patch(hook.pushErrorContext);

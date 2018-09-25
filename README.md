@@ -1,9 +1,9 @@
-# long-promise
+# long-promise2
 
 Long stack traces with Promises, using the brand-new `async_hooks` API provided by Node 8.0.0.
 
 ```JS
-const lp = require('long-promise');
+const lp = require('long-promise2');
 
 lp.enable();
 
@@ -59,29 +59,29 @@ This produces the following stack trace:
 
 ```
 Error: boom
-    at x (/Users/mvaldes/Sandbox/long-promise/example.js:12:27)
+    at x (/Users/mvaldes/Sandbox/long-promise2/example.js:12:27)
     at <anonymous>
     at Promise.then (<anonymous>)
-    at /Users/mvaldes/Sandbox/long-promise/example.js:23:44
+    at /Users/mvaldes/Sandbox/long-promise2/example.js:23:44
     at <anonymous>
     at Promise.then (<anonymous>)
-    at /Users/mvaldes/Sandbox/long-promise/example.js:29:10
+    at /Users/mvaldes/Sandbox/long-promise2/example.js:29:10
     at <anonymous>
     at Promise.then (<anonymous>)
-    at /Users/mvaldes/Sandbox/long-promise/example.js:29:10
+    at /Users/mvaldes/Sandbox/long-promise2/example.js:29:10
     at <anonymous>
     at Promise.then (<anonymous>)
-    at run (/Users/mvaldes/Sandbox/long-promise/example.js:42:10)
-    at Object.<anonymous> (/Users/mvaldes/Sandbox/long-promise/example.js:51:1)
+    at run (/Users/mvaldes/Sandbox/long-promise2/example.js:42:10)
+    at Object.<anonymous> (/Users/mvaldes/Sandbox/long-promise2/example.js:51:1)
     at Module._compile (module.js:569:30)
     at Object.Module._extensions..js (module.js:580:10)
 ```
 
-Without `long-promise` enabled, the original stack trace is the following:
+Without `long-promise2` enabled, the original stack trace is the following:
 
 ```
 Error: boom
-    at x (/Users/mvaldes/Sandbox/long-promise/example.js:12:27)
+    at x (/Users/mvaldes/Sandbox/long-promise2/example.js:12:27)
     at <anonymous>
 ```
 
@@ -91,7 +91,7 @@ This is very early work, any contributions are welcome.
 with [npm](https://npmjs.org) do:
 
 ```
-npm install long-promise
+npm install long-promise2
 ```
 
 # license

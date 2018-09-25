@@ -1,7 +1,7 @@
 {
-  "name": "long-promise",
-  "version": "0.1.1",
-  "description": "Long stack traces for Promise (Node 8 only)",
+  "name": "long-promise2",
+  "version": "1.0.1",
+  "description": "Long stack traces for Promise (Node 8 only). Forked from long-promise.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
@@ -10,7 +10,7 @@
   "devDependencies": {
     "eslint": "^3.19.0"
   },
-  "repository": "mvaldesdeleon/long-promise",
+  "repository": "stoarca/long-promise2",
   "keywords": [
     "node-8",
     "async_wrap",

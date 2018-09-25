@@ -37,7 +37,9 @@ function after(id) {
 function destroy(id) {
     if (!promiseData.has(id)) return;
 
-    promiseData.delete(id);
+    // HACK: Sometimes the id gets destroyed before the error is thrown, so the
+    // stack trace gets breokn. So we never clean
+    //promiseData.delete(id);
 }
 
 const hook = asyncHooks.createHook({
